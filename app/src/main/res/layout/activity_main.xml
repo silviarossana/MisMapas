@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gt.silviarossana.mismapas.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linear_layout_height"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/linear_layout_margin_top"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtAustralia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_australia"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/txtview_layout_margin_top"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imgAustralia"
+                android:layout_width="@dimen/imgview_layout_width"
+                android:layout_height="match_parent"
+                android:padding="@dimen/imgview_padding"
+                android:src="@drawable/australia"
+                android:onClick="clicIrMapaAustralia"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtEgipto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/txtview_layout_margin_top"
+                android:text="@string/txt_egipto"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imgEgipto"
+                android:layout_width="@dimen/imgview_layout_width"
+                android:layout_height="match_parent"
+                android:padding="@dimen/imgview_padding"
+                android:src="@drawable/egipto"
+                android:onClick="clicIrMapaEgipto"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linear_layout_height"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/linear_layout_margin_top"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtEspania"
+                android:layout_marginTop="@dimen/txtview_layout_margin_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/txt_espania"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imgEspania"
+                android:layout_width="@dimen/imgview_layout_width"
+                android:layout_height="match_parent"
+                android:padding="@dimen/imgview_padding"
+                android:src="@drawable/espania"
+                android:onClick="clicIrMapaEspania"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtGuatemala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/txtview_layout_margin_top"
+                android:text="@string/txt_guatemala"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imgGuatemala"
+                android:layout_width="@dimen/imgview_layout_width"
+                android:layout_height="match_parent"
+                android:padding="@dimen/imgview_padding"
+                android:src="@drawable/guatemala"
+                android:onClick="clicIrMapaGuatemala"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
